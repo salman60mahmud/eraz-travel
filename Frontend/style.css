@@ -1,0 +1,9 @@
+@plugin "daisyui";
+
+/* bubblegum sans font added */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bubblegum{
+     font-family: "Bubblegum Sans", sans-serif;
+     font-weight: 100;
+}
