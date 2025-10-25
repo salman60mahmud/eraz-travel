@@ -1,9 +1,43 @@
+
 @plugin "daisyui";
 
 /* bubblegum sans font added */
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.bubblegum{
-     font-family: "Bubblegum Sans", sans-serif;
-     font-weight: 100;
+/* exo font added */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bubblegum {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 100;
+}
+
+.exo {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+}
+
+.hero-section {
+    background-image: url(./images/hero-section.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+.seat-plan{
+    background-color: #eadcdc;
+}
+.seat-selection {
+    color: white;
+    font: 800;
+    width: 120px;
+    height: auto;
+    background-color: rgba(0, 0, 255, 0.762);
+    border-radius: 12px;
+    box-shadow: 2px;
+}
+
+.seat-selection:hover {
+    background-color: blue;
 }

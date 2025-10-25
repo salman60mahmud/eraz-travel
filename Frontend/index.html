@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome link added -->
-     <script src="https://kit.fontawesome.com/c48b450c15.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c48b450c15.js" crossorigin="anonymous"></script>
     <title>Eraz Travel</title>
     <!-- favicon added -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
@@ -56,6 +56,123 @@
         </nav>
     </header>
 
+    <!-- hero section starts -->
+    <section>
+        <div class="hero-section">
+            <h2 class="text-6xl text-white exo pt-64 pl-24">End-to-End Travel<br /> with <span
+                    class="text-lime-500">Eraz Travel</span></h2>
+            <button class="exo mt-10 ml-66 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Buy Tickets</button>
+        </div>
+    </section>
+
+    <!-- Seat section -->
+    <main class="pt-10 seat-plan px-30 flex justify-center">
+
+        <!-- selected seat section -->
+        <aside class="w-3/5 px-24">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-semibold">Select Your Seat</h3>
+                <hr class="mt-4">
+                <div class="flex justify-between mt-2">
+                    <h3 class="text-xl"><i class="fa-solid fa-chair"></i> Available</h3>
+                    <h3 class="text-emerald-800 mb-4 text-xl"><i class="fa-solid fa-chair"></i> Selected</h3>
+                </div>
+            </div>
+            <div class="md:flex justify-between hidden">
+                <div></div>
+                <div class="bg-blue-300 py-3 px-6 rounded-md mb-4 mr-14"><img src="./images/wheel-steering.png"
+                        alt="wheel-steering"></div>
+            </div>
+
+            <!-- seat plan -->
+            <section class="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-4xl mx-auto">
+                <!-- Seat first column -->
+                <div
+                    class="md:col-span-1 flex md:flex-col justify-center md:justify-start space-x-4 md:space-x-0 md:space-y-4">
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">A</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">B</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">C</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">D</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">E</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">F</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">G</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">H</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">I</h4>
+                    <h4 class="text-xl font-bold bg-white p-3 rounded-lg text-center">J</h4>
+                </div>
+
+                <!-- Seat Selection columns -->
+                <div class="md:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Seat Selection left -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="seat-selection">A-1</button>
+                        <button class="seat-selection">A-2</button>
+                        <button class="seat-selection">B-1</button>
+                        <button class="seat-selection">B-2</button>
+                        <button class="seat-selection">C-1</button>
+                        <button class="seat-selection">C-2</button>
+                        <button class="seat-selection">D-1</button>
+                        <button class="seat-selection">D-2</button>
+                        <button class="seat-selection">E-1</button>
+                        <button class="seat-selection">E-2</button>
+                        <button class="seat-selection">F-1</button>
+                        <button class="seat-selection">F-2</button>
+                        <button class="seat-selection">G-1</button>
+                        <button class="seat-selection">G-2</button>
+                        <button class="seat-selection">H-1</button>
+                        <button class="seat-selection">H-2</button>
+                        <button class="seat-selection">I-1</button>
+                        <button class="seat-selection">I-2</button>
+                        <button class="seat-selection">J-1</button>
+                        <button class="seat-selection">J-2</button>
+                    </div>
+
+                    <!-- Seat Selection right -->
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="seat-selection">A-3</button>
+                        <button class="seat-selection">A-4</button>
+                        <button class="seat-selection">B-3</button>
+                        <button class="seat-selection">B-4</button>
+                        <button class="seat-selection">C-3</button>
+                        <button class="seat-selection">C-4</button>
+                        <button class="seat-selection">D-3</button>
+                        <button class="seat-selection">D-4</button>
+                        <button class="seat-selection">E-3</button>
+                        <button class="seat-selection">E-4</button>
+                        <button class="seat-selection">F-3</button>
+                        <button class="seat-selection">F-4</button>
+                        <button class="seat-selection">G-3</button>
+                        <button class="seat-selection">G-4</button>
+                        <button class="seat-selection">H-3</button>
+                        <button class="seat-selection">H-4</button>
+                        <button class="seat-selection">I-3</button>
+                        <button class="seat-selection">I-4</button>
+                        <button class="seat-selection">J-3</button>
+                        <button class="seat-selection">J-4</button>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- personal information section -->
+        <article class="w-2/5">
+            <h3 class="text-3xl font-semibold">Ticket Confirmation</h3>
+            <hr class="mt-4">
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 mt-4">
+                <legend class="fieldset-legend text-xl border border-red-600 bg-red-800 px-4 text-white rounded-sm">Ticket Pricing</legend>
+                <section class="flex justify-between text-xl">
+                    <div>Seat</div>
+                    <div>Class</div>
+                    <div>Price</div>
+                    <hr>
+                </section>
+
+
+            </fieldset>
+
+        </article>
+    </main>
+<script src="./script.js"></script>
 </body>
 
 </html>
