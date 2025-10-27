@@ -91,44 +91,48 @@
                             <p>Coach-009-WEB ! AC_Business</p>
                         </div>
                     </div>
-                    <div class="text-emerald-800 font-semibold rounded-md bg-lime-500 py-4 px-6" id="available_seat"><i class="fa-solid fa-chair"></i> 40 Seats available</div>
+                    <div class="text-emerald-800 font-semibold rounded-md bg-lime-500 py-4 px-6" id="available_seat"><i
+                            class="fa-solid fa-chair"></i> 40 Seats available</div>
                 </div>
 
-        
-        <!-- Alternative button version -->
-        <div class="mt-8 rounded-xl shadow-lg overflow-hidden border border-red-600 w-1/2 mx-auto background">
-            <table class="w-4/5 mx-auto background">
-                <tbody>
-                    <!-- row 1 -->
-                    <tr class="border-b border-red-800">
-                        <td class="py-4 px-6 font-medium text-gray-700 text-sm md:text-base">Route</td>
-                        <td class="py-4 px-6 text-gray-900 font-semibold text-sm md:text-base">Dhaka-Sylhet</td>
-                    </tr>
-                    <!-- row 2 -->
-                    <tr class="border-b border-red-800">
-                        <td class="py-4 px-6 font-medium text-gray-700 text-sm md:text-base">Departure Time</td>
-                        <td class="py-4 px-6 text-gray-900 font-semibold text-sm md:text-base">9:00 PM</td>
-                    </tr>
-                    <!-- row 3 -->
-                    <tr>
-                        <td colspan="2" class="py-4 px-6">
-                            <div class="flex flex-col md:flex-row gap-3">
-                                <button class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
-                                    Boarding Point - Laxmipur
-                                </button>
-                                <button class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
-                                    Boarding Point - Bogura
-                                </button>
-                                <button class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
-                                    Est. Time: 11 hour
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+                <!-- Alternative button version -->
+                <div class="mt-8 rounded-xl shadow-lg overflow-hidden border border-red-600 w-1/2 mx-auto background">
+                    <table class="w-4/5 mx-auto background">
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr class="border-b border-red-800">
+                                <td class="py-4 px-6 font-medium text-gray-700 text-sm md:text-base">Route</td>
+                                <td class="py-4 px-6 text-gray-900 font-semibold text-sm md:text-base">Dhaka-Sylhet</td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr class="border-b border-red-800">
+                                <td class="py-4 px-6 font-medium text-gray-700 text-sm md:text-base">Departure Time</td>
+                                <td class="py-4 px-6 text-gray-900 font-semibold text-sm md:text-base">9:00 PM</td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                                <td colspan="2" class="py-4 px-6">
+                                    <div class="flex flex-col md:flex-row gap-3">
+                                        <button
+                                            class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
+                                            Boarding Point - Laxmipur
+                                        </button>
+                                        <button
+                                            class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
+                                            Boarding Point - Bogura
+                                        </button>
+                                        <button
+                                            class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg transition duration-200 text-sm md:text-base font-medium shadow-sm">
+                                            Est. Time: 11 hour
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
     </section>
 
@@ -229,12 +233,11 @@
                 <legend class="fieldset-legend text-xl border border-red-600 bg-red-800 px-4 text-white rounded-sm">
                     Ticket Pricing</legend>
                 <section class="flex justify-between text-xl">
-                    <div>Seat</div>
+                    <div>Seat<span class="text-emerald-800 border-1 bg-base-100 ml-2" id="seat_numbers">0</span></div>
                     <div>Class</div>
                     <div>Price</div>
-                    <hr>
                 </section>
-
+                <div id="dashboard"></div>
 
             </fieldset>
 
