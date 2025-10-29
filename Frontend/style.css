@@ -26,7 +26,7 @@
 }
 
 .background {
-    background-color: #eadcdc;
+    background-color: #f4f1f1;
 }
 
 .table-font {
@@ -34,15 +34,15 @@
 }
 
 .seat-selection {
-    color: white;
-    font: 800;
+    font-size: 18px;
     width: 120px;
     height: auto;
-    background-color: rgba(0, 0, 255, 0.762);
     border-radius: 12px;
+    border: 1px solid red;
+    background-color: rgb(80, 180, 95);
     box-shadow: 2px;
 }
 
 .seat-selection:hover {
-    background-color: blue;
+    background-color: rgb(59, 146, 59);
 }
