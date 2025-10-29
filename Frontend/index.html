@@ -91,8 +91,8 @@
                             <p>Coach-009-WEB ! AC_Business</p>
                         </div>
                     </div>
-                    <div class="text-emerald-800 font-semibold rounded-md bg-lime-500 py-4 px-6" id="available_seat"><i
-                            class="fa-solid fa-chair"></i> 40 Seats available</div>
+                    <div class="text-emerald-800 font-semibold rounded-md bg-lime-500 py-4 px-6"><i
+                            class="fa-solid fa-chair"></i> <span id="available_seat">40</span> Seats Available</div>
                 </div>
 
 
@@ -229,20 +229,24 @@
         <article class="w-2/5">
             <h3 class="text-3xl font-semibold">Ticket Confirmation</h3>
             <hr class="mt-4">
-            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 mt-4">
+            <fieldset class="bg-blue-100 border-base-300 rounded-box border p-4 mt-4">
                 <legend class="fieldset-legend text-xl border border-red-600 bg-red-800 px-4 text-white rounded-sm">
                     Ticket Pricing</legend>
-                <section class="flex justify-between text-xl">
-                    <div>Seat<span class="text-emerald-800 border-1 bg-base-100 ml-2" id="seat_numbers">0</span></div>
+                <section class="flex justify-around text-xl">
+                    <div>Seat<span class="text-emerald-800 border-1 rounded-sm w-5 bg-base-100 ml-2"
+                            id="seat_numbers">0</span></div>
                     <div>Class</div>
                     <div>Price</div>
                 </section>
                 <div id="dashboard"></div>
                 <!-- book now button -->
-                <button id="booking" class="text-xl px-3 py-2 mx-auto border-1 border-red-600 w-36 rounded-md font-semibold bg-yellow-400 hover:bg-yellow-500 mt-4" disabled>Book Now</button>
+                <button id="booking"
+                    class="text-xl px-3 py-2 mx-auto border-1 border-red-600 w-36 rounded-md font-semibold bg-yellow-400 hover:bg-yellow-500 mt-4"
+                    disabled>Book Now</button>
+                <!-- toast arrived after booking -->
+                 <span id="toast" class="alert alert-info hidden">New message arrived.</span>
 
             </fieldset>
-
         </article>
     </main>
     <script src="./script.js"></script>
