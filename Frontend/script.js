@@ -44,7 +44,7 @@ function show_data() {
         const seat_show = document.createElement('p');
         seat_show.innerText = data;
         seat_show.setAttribute('id', `p${data}`);
-        seat_show.classList.add('text-emerald-600', 'text-xl');
+        seat_show.classList.add('text-emerald-600', 'text-xl', 'mt-2', 'ml-24');
         dashboard.appendChild(seat_show);
     }
 }
