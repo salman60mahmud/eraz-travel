@@ -8,29 +8,28 @@ function select_seat(id) {
     let index = clicked_seat.indexOf(id);
     const button = document.getElementById(id);
 
-    // If seat is already selected, allow unselecting regardless of count
-    if (index !== -1) {
-        clicked_seat.splice(index, 1);
-        button.classList.remove('bg-emerald-800', 'rounded-xl', 'w-30');
-        button.classList.add('seat-selection');
+    if (index == -1) {
+        // check maximum limit
+        let maximum_seat = clicked_seat.length;
+        if (maximum_seat >= 6) {
+            alert('maximum 6 seats are allowed to purchase');
+            return;
+        }
+        clicked_seat.push(id);
+        button.classList.remove('seat-selection');
+        button.classList.add('bg-emerald-800', 'rounded-xl', 'w-30');
         show_data();
         seat_numbers()
         return;
     }
-
-    // Only check maximum limit when trying to select NEW seats
-    let maximum_seat = clicked_seat.length;
-    if (maximum_seat >= 6) {
-        alert('maximum 6 seats are allowed to purchase');
-        return;
+    else {
+        clicked_seat.splice(index, 1);
+        button.classList.remove('bg-emerald-800', 'rounded-xl', 'w-30');
+        button.classList.add('seat-selection');
+        show_data();
+        seat_numbers();
     }
 
-    // If we get here, it means we're selecting a new seat and we're under the limit
-    clicked_seat.push(id);
-    button.classList.remove('seat-selection');
-    button.classList.add('bg-emerald-800', 'rounded-xl', 'w-30');
-    show_data();
-    seat_numbers()
 }
 
 function show_data() {
